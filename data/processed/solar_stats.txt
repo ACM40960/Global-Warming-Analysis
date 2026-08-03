@@ -1,0 +1,9 @@
+SOLAR IRRADIANCE (TSI) ANALYSIS
+==================================================
+TSI secular trend:
+  1850-2025: +0.0114 W/m^2/decade (R^2=0.030, p=2.17e-02)
+  1980-2025: +0.0027 W/m^2/decade (R^2=0.000, p=9.52e-01)
+
+TSI vs global temperature (1854-2025, n=172): r=0.1702, corrected p=0.4164 (N_eff=25.0)
+TSI vs global temperature, satellite era only (1980-2025, n=46): r=0.1422, corrected p=0.7127 (N_eff=9.1)
+TSI vs CO2 (1979-2025, n=47): r=0.0075, corrected p=0.9869 (N_eff=7.3)
