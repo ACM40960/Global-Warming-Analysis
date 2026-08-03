@@ -49,7 +49,7 @@ re-running the pipeline against the raw source files.
 ## Objectives
 
 - [x] Build a global-surface temperature anomaly record with proper
-      spatial coverage of the ocean (not just a handful of stations)
+      spatial coverage of the ocean (not just a handful of stations but globally)
 - [x] Attach honest, statistically-derived error bars / uncertainty to
       every time series produced
 - [x] Quantify the correlation between atmospheric CO2 and temperature
@@ -178,7 +178,7 @@ python3 03_volcanic_vs_co2.py
   marginally significant), and volcanic activity's effect is
   statistically indistinguishable from zero.
 
-Full write-up, with every supporting figure, is in
+Full write-up, with every supporting figure, is in (yet to be uploaded)
 [`CASE_REPORT.md`](CASE_REPORT.md).
 
 ## Conclusion
@@ -258,9 +258,9 @@ If you run into an issue or have a question:
 
 ## Maintainers
 
-- **[Your Name]** — [@your-github-handle](https://github.com/your-github-handle)
+- **[Shruti Vijay Jadhav]** — [@shruti.jadhav@ucdconnect.ie](https://github.com/your-github-handle)
+- **[Akshaiyan Babu]** —
 
-*(Update this section with your own name/handle before publishing.)*
 
 ## Acknowledgements
 
