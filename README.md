@@ -30,9 +30,9 @@ from raw land, ocean, atmospheric, volcanic, and solar datasets.
 
 ## Project Overview
 
-This project builds a global surface temperature record from scratch —
+This project builds a global surface temperature record from scratch
 combining a land-average time series with a gridded sea-surface
-temperature dataset (~16,000 ocean "locations") — and then statistically
+temperature dataset (~16,000 ocean "locations") and then statistically
 tests three competing explanations for the warming trend it finds:
 
 1. **Rising atmospheric CO2** (the anthropogenic hypothesis)
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 Place the six raw source files in `data/raw/` (see
 [Project Structure](#project-structure) for the exact expected filenames).
-`Sea_Temperature.nc` (~150 MB) is not tracked in this repository — download
+`Sea_Temperature.nc` (~150 MB) is not tracked in this repository download
 it separately and drop it into `data/raw/` before running.
 
 ### Running the pipeline
@@ -137,7 +137,7 @@ python3 03_volcanic_vs_co2.py
   correlation that removes the shared trend entirely.
 - **Reporting bias in historical volcanic records.** Raw eruption *counts*
   show an artificial upward trend simply because global volcanic
-  monitoring has improved since 1850 — small eruptions in remote regions
+  monitoring has improved since 1850 small eruptions in remote regions
   are far more likely to be recorded today. This was mitigated by also
   computing a VEI-magnitude-weighted index, which is dominated by large,
   historically well-documented eruptions and is far less sensitive to
@@ -148,12 +148,12 @@ python3 03_volcanic_vs_co2.py
   used as a reasonable stand-in error bar.
 - **Large, sparsely-documented NetCDF files.** The gridded ocean file
   needed a per-cell climatology and month-by-month anomaly calculation
-  before any spatial averaging was valid — averaging absolute
+  before any spatial averaging was valid averaging absolute
   temperatures directly (without converting to anomalies first) would
   have produced a meaningless series dominated by geography rather than
   by warming.
 - **Short overlap between datasets.** The CO2 record only starts in 1979,
-  which caps every CO2-involving statistical test at 47 years of data —
+  which caps every CO2-involving statistical test at 47 years of data
   a real limitation, discussed openly in the results rather than hidden.
 
 ## Results
@@ -251,31 +251,30 @@ project/
 
 If you run into an issue or have a question:
 
-- Open a [GitHub Issue](../../issues) with a clear description and, if
-  applicable, the console output or traceback
+- If you have any questions or need help, feel free to open an issue in the repository or contact the maintainers.
 - For questions about the underlying datasets, see the source citations
   in [Acknowledgements](#acknowledgements)
 
 ## Maintainers
 
-- **[Shruti Vijay Jadhav]** — [@shruti.jadhav@ucdconnect.ie](https://github.com/your-github-handle)
-- **[Akshaiyan Babu]** —
+- **Shruti Vijay Jadhav** — [@shruti.jadhav@ucdconnect.ie]
+- **Akshaiyan Babu** — [@akshaiyan.babu@ucdconnect.ie]
 
 
 ## Acknowledgements
 
-This project builds on publicly available data from:
+We would like to express our sincere gratitude to everyone who contributed to the successful completion of this project.
 
-- **NOAA Global Monitoring Laboratory** — global annual mean atmospheric
-  CO2 (gml.noaa.gov/ccgg/trends/)
-- **NOAA NCEI — ERSSTv5** — Extended Reconstructed Sea Surface
-  Temperature v5, gridded ocean data
-- **NOAA/LASP** — Total Solar Irradiance composite reconstruction
-  (Coddington & Lean)
-- **Smithsonian Institution — Global Volcanism Program** — historical
-  eruption catalog with VEI classifications
-- Land and blended land+ocean temperature anomaly products used for
-  validation
+University College Dublin (UCD):
+For providing the opportunity to undertake this project as part of the ACM40960 Big Data Programming module and for offering the academic resources and learning environment that supported our work.
 
-Thanks to the maintainers of `numpy`, `pandas`, `scipy`, `xarray`,
-`matplotlib`, and `statsmodels`, on which this entire analysis depends.
+Dr. Sarp Akcay:
+Our module lecturer and supervisor, for his guidance, insightful lectures, and continuous support throughout the project. His instruction provided the foundation and direction necessary to complete this work.
+
+NOAA, IPCC, and the Global Climate Research Community:
+For making high-quality climate datasets publicly available, enabling research into global temperature trends, atmospheric CO₂ concentrations, solar irradiance, volcanic activity, and other climate variables.
+
+The Open-Source Community:
+For developing and maintaining the open-source libraries, tools, and documentation that made data collection, processing, analysis, and visualization possible.
+
+Finally, we would like to acknowledge the global scientific community whose decades of research in climate science, atmospheric physics, environmental modelling, and data science have provided the knowledge and datasets upon which this project is based.
