@@ -223,14 +223,14 @@ analyzed here.
 
 ```
 project/
-├── README.md                  <- this file
+├── README.md                  
 ├── CASE_REPORT.md              <- full written results with figures
 ├── requirements.txt
 ├── data/
 │   └── raw/
 │       ├── Land_Temperature.asc
 │       ├── Global_Temperature.asc
-│       ├── Sea_Temperature.nc        (not tracked in git — see Getting Started)
+│       ├── Sea_Temperature.nc        
 │       ├── Solar_Irradiance.nc
 │       ├── Global_C02_Annual.csv
 │       └── Volcanic_Activity.tsv
