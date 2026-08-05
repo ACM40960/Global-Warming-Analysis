@@ -1,0 +1,9 @@
+VOLCANIC ACTIVITY vs CO2
+==================================================
+Secular trend in volcanic activity, 1850-2025:
+  eruption count:   +0.295/decade, R^2=0.321, p=2.53e-16 -> increasing
+  magnitude index:  -6.77e+02/decade, R^2=0.000, p=7.74e-01 -> increasing
+
+Correlation with CO2 (1979-2025, n=47):
+  eruption count vs CO2:   r=0.1240, corrected p=0.4464 (N_eff=39.9)
+  magnitude idx vs CO2:    r=-0.1460, corrected p=0.3275 (N_eff=47.0)

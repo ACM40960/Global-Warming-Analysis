@@ -1,0 +1,30 @@
+MULTIVARIATE REGRESSION: temperature ~ CO2 + Solar TSI + Volcanic magnitude
+(standardized predictors, Newey-West HAC standard errors, period 1979-2025, n=47)
+======================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.912
+Model:                            OLS   Adj. R-squared:                  0.906
+Method:                 Least Squares   F-statistic:                     196.9
+Date:                Wed, 05 Aug 2026   Prob (F-statistic):           3.89e-25
+Time:                        17:02:58   Log-Likelihood:                 50.562
+No. Observations:                  47   AIC:                            -93.12
+Df Residuals:                      43   BIC:                            -85.72
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                  0.1289      0.012     10.828      0.000       0.106       0.152
+CO2                    0.2677      0.012     23.168      0.000       0.245       0.290
+Solar_TSI              0.0263      0.013      2.079      0.038       0.002       0.051
+Volcanic_magnitude    -0.0080      0.013     -0.596      0.551      -0.034       0.018
+==============================================================================
+Omnibus:                        8.382   Durbin-Watson:                   1.598
+Prob(Omnibus):                  0.015   Jarque-Bera (JB):                2.666
+Skew:                          -0.143   Prob(JB):                        0.264
+Kurtosis:                       1.869   Cond. No.                         1.08
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 3 lags and without small sample correction

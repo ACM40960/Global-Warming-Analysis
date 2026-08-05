@@ -1,0 +1,14 @@
+GLOBAL SURFACE TEMPERATURE TREND STATISTICS
+==================================================
+Period: 1854-2025 (n=172 years)
+
+Ordinary Least Squares:
+  slope           = +0.0586 C/decade
+  95% CI          = [+0.0523, +0.0650] C/decade
+  R^2             = 0.6583
+  p-value         = 1.709e-41
+
+Mann-Kendall non-parametric trend test:
+  result          = increasing
+  Z statistic     = 12.245
+  p-value         = 0.000e+00
