@@ -190,5 +190,16 @@ does show is that the statistical pattern in the data is fully
 consistent with the CO2-driven warming hypothesis, and is not consistent
 with the two most commonly proposed natural alternatives, volcanic
 activity and solar variability, given the specific datasets analyzed
-here. Reproducing or challenging these numbers is straightforward, see
-`README.md` for how to re-run the entire pipeline from the raw files.
+here. 
+A second, more methodological caveat: `Land_Temperature.asc` is a
+pre-built global land average, not raw station-level data, so this
+project reuses the station-selection and record-length-harmonization
+work already done upstream by whoever produced that file, rather than
+independently re-deriving it from individual station records. The ocean
+side of the record does not have this limitation `Sea_Temperature.nc`
+is a full latitude/longitude grid, so ocean coverage in this project is
+genuinely complete and area-weighted, not sampled from a handful of
+buoys. 
+See `DATA_SOURCES.md` for the full discussion
+of this trade-off and for exact dataset provenance.
+See `README.md` for how to re-run the entire pipeline from the raw files.
