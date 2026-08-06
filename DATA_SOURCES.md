@@ -1,14 +1,14 @@
 # Data Sources & Provenance
 This file documents exactly where each raw file came from
 
-| File | Dataset name / version | Source organization | URL | Accessed |
+| File | Source organization | URL | Accessed |
 |---|---|---|---|---|
-| `Land_Temperature.asc` | e.g. HadCRUT5 / GISTEMP land-only annual anomaly | e.g. Met Office Hadley Centre / NASA GISS | _fill in_ | _fill in_ |
-| `Global_Temperature.asc` | e.g. HadCRUT5 or GISTEMP blended land+ocean | _fill in_ | _fill in_ | _fill in_ |
-| `Sea_Temperature.nc` | ERSSTv5 gridded monthly SST | NOAA NCEI | _fill in_ | _fill in_ |
-| `Solar_Irradiance.nc` | NOAA/LASP composite TSI reconstruction | NOAA / LASP | _fill in_ | _fill in_ |
-| `Global_C02_Annual.csv` | NOAA GML global annual mean CO2 | NOAA Global Monitoring Laboratory | _fill in_ | _fill in_ |
-| `Volcanic_Activity.tsv` | Global Volcanism Program eruption catalog | Smithsonian Institution | _fill in_ | _fill in_ |
+| `Land_Temperature.asc` | NOAA National Centers for Environmental Information | NOAAGlobalTemp | (https://www.ncei.noaa.gov/products/land-based-station/noaa-global-temp)|
+| `Global_Temperature.asc` | NOAA National Centers for Environmental Informationfill in_ |  (https://www.ncei.noaa.gov/products/land-based-station/noaa-global-temp) |
+| `Sea_Temperature.nc` |  NOAA Physical Sciences Laboratory |(https://www.psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html) |
+| `Solar_Irradiance.nc` |  NOAA National Centers for Environmental Information | (https://www.ncei.noaa.gov/products/climate-data-records/total-solar-irradiance) |
+| `Global_C02_Annual.csv` |  NOAA Global Monitoring Laboratory |(https://gml.noaa.gov/ccgg/trends/gl_data.html) | 
+| `Volcanic_Activity.tsv` |  NOAA National Centers for Environmental Information | (https://www.ngdc.noaa.gov/hazel/view/hazards/volcano/event-data?maxYear=2025&minYear=1850) |
 
 ## Notes on data curation choices
 
