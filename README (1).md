@@ -1,13 +1,10 @@
-<p align="center">
-  <img src="assets/logo.svg" width="140" alt="Global Warming Attribution Project logo">
-</p>
 
-<h1 align="center">🌍 Global Warming Attribution Project</h1>
+<h1 align="center">🌍 Global Warming Analysis </h1>
 
 <p align="center">
   A reproducible, statistics-first analysis of whether the observed rise in
   global surface temperature since 1850 is better explained by rising
-  atmospheric CO₂, volcanic activity, or solar irradiance — built entirely
+  atmospheric CO₂, volcanic activity, or solar irradiance built entirely
   from raw land, ocean, atmospheric, volcanic, and solar datasets.
 </p>
 
@@ -150,7 +147,7 @@ Full write-up, with every supporting figure, is in [`CASE\_REPORT.md`](CASE_REPO
 Every statistical test in this pipeline points the same direction: the
 observed warming trend tracks atmospheric CO₂ closely, even after
 correcting for shared autocorrelation, while the two leading natural
-alternatives — volcanic activity and solar irradiance — show neither a
+alternatives — volcanic activity and solar irradiance show neither a
 comparable long-term trend nor a significant correlation with either CO₂
 or temperature over the periods tested.
 
@@ -209,7 +206,7 @@ project/
 If you run into an issue or have a question:
 
 * For questions about the underlying datasets, see the source citations in [Acknowledgements](#acknowledgements) and [`DATA\_SOURCES.md`](DATA_SOURCES.md)
-* For questions about the project please feel free to contact the Authors
+* For questions about the project please feel free to contact the Authors.
 
 ## Authors
 
