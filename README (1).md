@@ -107,7 +107,7 @@ for the exact expected filenames). `Sea\_Temperature.nc` (\~150 MB) is not
 tracked in this repository — download it separately and drop it into
 `data/raw/` before running. Full provenance for every raw file (dataset
 name, source organization, and URL) is documented in
-[`DATA\_SOURCES.md`](DATA_SOURCES.md).
+[`DATA_SOURCES.md`](DATA_SOURCES.md).
 
 ### Running the pipeline
 
