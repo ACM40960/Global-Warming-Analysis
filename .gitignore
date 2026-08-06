@@ -1,0 +1,17 @@
+# --- Large / regeneratable data ---
+# Sea_Temperature.nc is ~150MB. Do NOT commit it directly to a normal
+# GitHub repo (GitHub hard-blocks files >100MB without Git LFS).
+# Use ONE of:
+#   (a) git lfs track "data/raw/Sea_Temperature.nc"   then commit normally
+#   (b) upload it as a GitHub Release asset (supports up to 2GB) and
+#       remove this ignore line, OR keep it ignored and link the release
+#       in README.md
+# If you set up Git LFS, delete the line below.
+data/raw/Sea_Temperature.nc
+
+# --- Python ---
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
