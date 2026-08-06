@@ -1,10 +1,10 @@
 # Data Sources & Provenance
 This file documents exactly where each raw file came from
 
-| File | Source organization | URL | Accessed |
-|---|---|---|---|---|
-| `Land_Temperature.asc` | NOAA National Centers for Environmental Information | NOAAGlobalTemp | (https://www.ncei.noaa.gov/products/land-based-station/noaa-global-temp)|
-| `Global_Temperature.asc` | NOAA National Centers for Environmental Informationfill in_ |  (https://www.ncei.noaa.gov/products/land-based-station/noaa-global-temp) |
+| File | Source organization | URL |
+|---|---|---|
+| `Land_Temperature.asc` | NOAA National Centers for Environmental Information | (https://www.ncei.noaa.gov/products/land-based-station/noaa-global-temp)|
+| `Global_Temperature.asc` | NOAA National Centers for Environmental Information | (https://www.ncei.noaa.gov/products/land-based-station/noaa-global-temp) |
 | `Sea_Temperature.nc` |  NOAA Physical Sciences Laboratory |(https://www.psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html) |
 | `Solar_Irradiance.nc` |  NOAA National Centers for Environmental Information | (https://www.ncei.noaa.gov/products/climate-data-records/total-solar-irradiance) |
 | `Global_C02_Annual.csv` |  NOAA Global Monitoring Laboratory |(https://gml.noaa.gov/ccgg/trends/gl_data.html) | 
