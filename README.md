@@ -35,9 +35,9 @@
 
 ## Project Overview
 
-This project builds a global surface temperature record from scratch —
+This project builds a global surface temperature record from scratch 
 combining a land-average time series with a gridded sea-surface
-temperature dataset (\~16,000 ocean "locations") — and then statistically
+temperature dataset (\~16,000 ocean "locations")  and then statistically
 tests three competing explanations for the warming trend it finds:
 
 1. **Rising atmospheric CO₂** (the anthropogenic hypothesis)
@@ -83,7 +83,7 @@ re-running the pipeline against the raw source files.
 ### Prerequisites
 
 * Python 3.10+
-* \~200 MB free disk space (mainly for the sea-surface-temperature NetCDF file)
+* \~200 MB free disk space (mainly for the sea-surface-temperature NetCDF file, it is huge)
 
 ### Installation
 
@@ -104,7 +104,7 @@ pip install -r requirements.txt
 
 Place the six raw source files in `data/raw/` (see [Project Structure](#project-structure)
 for the exact expected filenames). `Sea\_Temperature.nc` (\~150 MB) is not
-tracked in this repository — download it separately and drop it into
+tracked in this repository please download it separately and drop it into
 `data/raw/` before running. Full provenance for every raw file (dataset
 name, source organization, and URL) is documented in
 [`DATA_SOURCES.md`](DATA_SOURCES.md).
@@ -129,8 +129,8 @@ python3 03\_volcanic\_vs\_co2.py
 * **Autocorrelation inflating apparent significance.** Two smoothly trending time series (like CO₂ and temperature) will show a very high Pearson correlation almost regardless of whether they're causally related. This was addressed by computing an effective sample size from each series' lag-1 autocorrelation before testing significance, and by cross-checking the level correlation against a first-difference correlation that removes the shared trend entirely.
 * **Reporting bias in historical volcanic records.** Raw eruption *counts* show an artificial upward trend simply because global volcanic monitoring has improved since 1850 — small eruptions in remote regions are far more likely to be recorded today. This was mitigated by also computing a VEI-magnitude-weighted index, which is dominated by large, historically well-documented eruptions and is far less sensitive to this bias.
 * **Missing native uncertainty in the land temperature file.** The provided land-temperature series ships no per-year uncertainty column. A rolling-residual proxy (spread around a 15-year smoothed mean) was used as a reasonable stand-in error bar.
-* **Large, sparsely-documented NetCDF files.** The gridded ocean file needed a per-cell climatology and month-by-month anomaly calculation before any spatial averaging was valid — averaging absolute temperatures directly (without converting to anomalies first) would have produced a meaningless series dominated by geography rather than by warming.
-* **Short overlap between datasets.** The CO₂ record only starts in 1979, which caps every CO₂-involving statistical test at 47 years of data — a real limitation, discussed openly in the results rather than hidden.
+* **Large, sparsely-documented NetCDF files.** The gridded ocean file needed a per-cell climatology and month-by-month anomaly calculation before any spatial averaging was valid averaging absolute temperatures directly (without converting to anomalies first) would have produced a meaningless series dominated by geography rather than by warming.
+* **Short overlap between datasets.** The CO₂ record only starts in 1979, which caps every CO₂-involving statistical test at 47 years of data a real limitation, discussed openly in the results rather than hidden.
 
 ## Results
 
@@ -144,10 +144,10 @@ Full write-up, with every supporting figure, is in [`CASE\_REPORT.md`](CASE_REPO
 
 ## Conclusion
 
-Every statistical test in this pipeline points the same direction: the
+Every statistical test in this pipeline points the same direction, the
 observed warming trend tracks atmospheric CO₂ closely, even after
 correcting for shared autocorrelation, while the two leading natural
-alternatives — volcanic activity and solar irradiance show neither a
+alternatives volcanic activity and solar irradiance show neither a
 comparable long-term trend nor a significant correlation with either CO₂
 or temperature over the periods tested.
 
@@ -178,7 +178,6 @@ project/
 ├── CASE\_REPORT.md              <- full written results with figures
 ├── DATA\_SOURCES.md             <- provenance for every raw data file
 ├── requirements.txt
-
 ├── .gitignore
 ├── data/
 │   └── raw/
@@ -188,7 +187,7 @@ project/
 │       ├── Solar\_Irradiance.nc
 │       ├── Global\_C02\_Annual.csv
 │       └── Volcanic\_Activity.tsv
-├── scripts/
+├── Scripts/
 │   ├── utils.py                          # shared stats/plotting helpers
 │   ├── 01\_process\_temperature.py
 │   ├── 02\_co2\_temperature\_correlation.py
