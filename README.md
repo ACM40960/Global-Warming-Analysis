@@ -188,12 +188,12 @@ project/
 │       ├── Global\_C02\_Annual.csv
 │       └── Volcanic\_Activity.tsv
 ├── Scripts/
-│   ├── utils.py                          # shared stats/plotting helpers
 │   ├── 01\_process\_temperature.py
 │   ├── 02\_co2\_temperature\_correlation.py
 │   ├── 03\_volcanic\_vs\_co2.py
 │   ├── 04\_solar\_vs\_co2\_temperature.py
 │   ├── 05\_multivariate\_regression.py
+|   ├── utils.py
 │   └── run\_all.py
 └── outputs/
     ├── data/       <- CSVs + plain-text statistics summaries
