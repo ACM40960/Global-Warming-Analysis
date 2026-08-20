@@ -117,7 +117,7 @@ that.)
 
 Total Solar Irradiance (TSI, 1610–2025) does have a small, statistically
 significant upward trend across the full industrial period
-(+0.011 W/m²/decade, p = 0.02) — but that trend is dominated by the
+(+0.011 W/m²/decade, p = 0.02)  but that trend is dominated by the
 recovery out of the 17th-century Maunder Minimum, long before industrial
 CO2 emissions began.
 
