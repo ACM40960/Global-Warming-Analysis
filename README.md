@@ -176,7 +176,8 @@ analyzed here.
 project/
 ├── README.md                  <- this file
 ├── CASE\_REPORT.md              <- full written results with figures
-├── DATA\_SOURCES.md             <- provenance for every raw data file
+├── DATA\_SOURCES.md           <- provenance for every raw data file
+├── Project Poster.pdf
 ├── requirements.txt
 ├── .gitignore
 ├── data/
